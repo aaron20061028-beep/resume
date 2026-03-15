@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>個人履歷 - 許邑安</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+
+.container{
+    width:750px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+h2{
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+    margin-top:25px;
+}
+
+p,li{
+    line-height:1.8;
+}
+
+ul{
+    padding-left:20px;
+}
+
+button{
+    padding:8px 15px;
+    border:none;
+    background:#333;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#555;
+}
+
+#intro{
+    display:none;
+    margin-top:10px;
+    background:#eee;
+    padding:10px;
+    border-radius:5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>個人履歷 Resume</h1>
+
+<h2>基本資料</h2>
+<p><strong>姓名：</strong>許邑安</p>
+<p><strong>學校：</strong>亞洲大學 (Asia University)</p>
+<p><strong>學號：</strong>AU114001001</p>
+<p><strong>身分：</strong>學生</p>
+
+<h2>學歷</h2>
+<ul>
+<li>亞洲大學</li>
+<li>就讀科系：室內設計相關領域</li>
+<li>就讀期間：2024 - 至今</li>
+</ul>
+
+<h2>技能</h2>
+<ul>
+<li>SketchUp 3D建模</li>
+<li>空間設計概念發想</li>
+<li>模型製作</li>
+<li>基礎平面設計</li>
+<li>HTML / CSS 基礎</li>
+</ul>
+
+<h2>興趣</h2>
+<ul>
+<li>室內空間設計</li>
+<li>建築風格研究</li>
+<li>創意模型製作</li>
+<li>觀察生活中的設計</li>
+</ul>
+
+<h2>自我介紹</h2>
+<button onclick="showIntro()">點擊顯示 / 隱藏介紹</button>
+
+<div id="intro">
+我是亞洲大學的學生，目前就讀於室內設計相關領域。  
+我對空間設計與創新事物充滿興趣，平時喜歡觀察生活中的設計細節，
+並透過模型製作與數位工具表達自己的設計想法。未來希望能持續提升
+自己的設計能力，並在設計領域中發展。
+</div>
+
+</div>
+
+<script>
+function showIntro(){
+    var intro = document.getElementById("intro");
+
+    if(intro.style.display === "none"){
+        intro.style.display = "block";
+    }else{
+        intro.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
