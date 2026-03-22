@@ -6,294 +6,155 @@
 
 <style>
 body{
-    font-family: "Microsoft JhengHei", Arial, sans-serif;
-    background:#f5f5f5;
+    font-family: "Microsoft JhengHei", Arial;
+    background:#eee;
     margin:0;
-    padding: 20px;
 }
 
+/* 主容器 */
 .container{
-    width:750px;
+    width:900px;
     margin:40px auto;
+    display:flex;
     background:white;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
 }
 
-.header-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid #333;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+/* 左側欄 */
+.left{
+    width:30%;
+    background:#2c3e50;
+    color:white;
+    padding:30px 20px;
+    text-align:center;
 }
 
-.profile-info h1 {
-    margin: 0;
-    text-align: left;
-    color: #333;
+.left img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+    border:3px solid white;
 }
 
-/* 照片樣式設定 */
-.profile-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* 確保照片比例正確不變形 */
-    border-radius: 50%; /* 圓形頭像，若要方形可刪除此行 */
-    border: 3px solid #ddd;
+.left h2{
+    margin:10px 0;
 }
 
-h2 {
-    border-left: 5px solid #333;
-    padding-left: 10px;
-    margin-top: 30px;
-    color: #444;
+.left p{
+    font-size:14px;
+    color:#ddd;
 }
 
-p, li {
-    line-height: 1.8;
-    color: #555;
+/* 技能 */
+.skill{
+    margin-top:20px;
+    text-align:left;
 }
 
-ul {
-    padding-left: 20px;
+.skill h3{
+    border-bottom:1px solid #aaa;
+    padding-bottom:5px;
 }
 
-button {
-    padding: 10px 20px;
-    border: none;
-    background: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+.skill ul{
+    padding-left:20px;
 }
 
-button:hover {
-    background: #555;
+/* 右側欄 */
+.right{
+    width:70%;
+    padding:30px;
 }
 
-#intro {
-    display: none;
-    margin-top: 15px;
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    border-left: 3px solid #ccc;
+.right h1{
+    margin:0;
 }
+
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    border-left:5px solid #2c3e50;
+    padding-left:10px;
+    color:#333;
+}
+
+ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+.intro{
+    background:#f5f5f5;
+    padding:15px;
+    border-radius:5px;
+    margin-top:10px;
+}
+
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-    <div class="header-section">
-        <div class="profile-info">
-            <h1>許邑安 <small style="font-size: 0.5em; color: #666;">Resume</small></h1>
-            <p><strong>學校：</strong>亞洲大學 (Asia University)</p>
-            <p><strong>學號：</strong>AU114001001</p>
-            <p><strong>身分：</strong>學生 / 室內設計候選人</p>
+    <!-- 左側 -->
+    <div class="left">
+        <img src="1772347782743.jpg">
+
+        <h2>許邑安</h2>
+        <p>亞洲大學</p>
+        <p>室內設計學生</p>
+
+        <div class="skill">
+            <h3>技能</h3>
+            <ul>
+                <li>SketchUp</li>
+                <li>3D建模</li>
+                <li>空間設計</li>
+                <li>模型製作</li>
+                <li>HTML / CSS</li>
+            </ul>
         </div>
-        <img src="1772347782743.jpg" alt="許邑安的照片" class="profile-img">
+
+        <div class="skill">
+            <h3>興趣</h3>
+            <ul>
+                <li>室內設計</li>
+                <li>建築研究</li>
+                <li>創意模型</li>
+            </ul>
+        </div>
     </div>
 
-    <h2>學歷</h2>
-    <ul>
-        <li><strong>亞洲大學</strong></li>
-        <li>就讀科系：室內設計相關領域</li>
-        <li>就讀期間：2024 - 至今</li>
-    </ul>
+    <!-- 右側 -->
+    <div class="right">
+        <h1>個人履歷</h1>
+        <p>學號：AU114001001</p>
 
-    <h2>技能</h2>
-    <ul>
-        <li>SketchUp 3D建模</li>
-        <li>空間設計概念發想</li>
-        <li>模型製作</li>
-        <li>基礎平面設計 / HTML & CSS 基礎</li>
-    </ul>
+        <div class="section">
+            <h2>學歷</h2>
+            <ul>
+                <li>亞洲大學 室內設計相關領域</li>
+                <li>2024 - 至今</li>
+            </ul>
+        </div>
 
-    <h2>興趣</h2>
-    <ul>
-        <li>室內空間設計與建築風格研究</li>
-        <li>創意模型製作</li>
-        <li>觀察生活中的設計細節</li>
-    </ul>
+        <div class="section">
+            <h2>自我介紹</h2>
+            <div class="intro">
+                我是亞洲大學室內設計相關科系學生，對空間設計與創新事物充滿熱情。
+                平時喜歡觀察生活中的設計細節，並透過模型與數位工具表達想法。
+                未來希望能持續精進設計能力，朝專業設計師邁進。
+            </div>
+        </div>
 
-    <h2>自我介紹</h2>
-    <button onclick="showIntro()">點擊顯示 / 隱藏介紹</button>
-
-    <div id="intro">
-        我是亞洲大學的學生，目前就讀於室內設計相關領域。  
-        我對空間設計與創新事物充滿興趣，平時喜歡觀察生活中的設計細節，
-        並透過模型製作與數位工具表達自己的設計想法。未來希望能持續提升
-        自己的設計能力，並在設計領域中發展。
     </div>
 
 </div>
-
-<script>
-function showIntro(){
-    var intro = document.getElementById("intro");
-    if(intro.style.display === "none" || intro.style.display === ""){
-        intro.style.display = "block";
-    }else{
-        intro.style.display = "none";
-    }
-}
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-<meta charset="UTF-8">
-<title>個人履歷 - 許邑安</title>
-
-<style>
-body{
-    font-family: "Microsoft JhengHei", Arial, sans-serif;
-    background:#f5f5f5;
-    margin:0;
-    padding: 20px;
-}
-
-.container{
-    width:750px;
-    margin:40px auto;
-    background:white;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
-}
-
-.header-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid #333;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.profile-info h1 {
-    margin: 0;
-    text-align: left;
-    color: #333;
-}
-
-/* 照片樣式設定 */
-.profile-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* 確保照片比例正確不變形 */
-    border-radius: 50%; /* 圓形頭像，若要方形可刪除此行 */
-    border: 3px solid #ddd;
-}
-
-h2 {
-    border-left: 5px solid #333;
-    padding-left: 10px;
-    margin-top: 30px;
-    color: #444;
-}
-
-p, li {
-    line-height: 1.8;
-    color: #555;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #555;
-}
-
-#intro {
-    display: none;
-    margin-top: 15px;
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    border-left: 3px solid #ccc;
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="header-section">
-        <div class="profile-info">
-            <h1>許邑安 <small style="font-size: 0.5em; color: #666;">Resume</small></h1>
-            <p><strong>學校：</strong>亞洲大學 (Asia University)</p>
-            <p><strong>學號：</strong>AU114001001</p>
-            <p><strong>身分：</strong>學生 / 室內設計候選人</p>
-        </div>
-        <img src="1772347782743.jpg" alt="許邑安的照片" class="profile-img">
-    </div>
-
-    <h2>學歷</h2>
-    <ul>
-        <li><strong>亞洲大學</strong></li>
-        <li>就讀科系：室內設計相關領域</li>
-        <li>就讀期間：2024 - 至今</li>
-    </ul>
-
-    <h2>技能</h2>
-    <ul>
-        <li>SketchUp 3D建模</li>
-        <li>空間設計概念發想</li>
-        <li>模型製作</li>
-        <li>基礎平面設計 / HTML & CSS 基礎</li>
-    </ul>
-
-    <h2>興趣</h2>
-    <ul>
-        <li>室內空間設計與建築風格研究</li>
-        <li>創意模型製作</li>
-        <li>觀察生活中的設計細節</li>
-    </ul>
-
-    <h2>自我介紹</h2>
-    <button onclick="showIntro()">點擊顯示 / 隱藏介紹</button>
-
-    <div id="intro">
-        我是亞洲大學的學生，目前就讀於室內設計相關領域。  
-        我對空間設計與創新事物充滿興趣，平時喜歡觀察生活中的設計細節，
-        並透過模型製作與數位工具表達自己的設計想法。未來希望能持續提升
-        自己的設計能力，並在設計領域中發展。
-    </div>
-
-</div>
-
-<script>
-function showIntro(){
-    var intro = document.getElementById("intro");
-    if(intro.style.display === "none" || intro.style.display === ""){
-        intro.style.display = "block";
-    }else{
-        intro.style.display = "none";
-    }
-}
-</script>
 
 </body>
 </html>
